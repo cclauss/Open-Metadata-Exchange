@@ -16,8 +16,9 @@ author = "ISKME and contributors"
 
 exclude_patterns = [
     "_build",
-    "Thumbs.db",
     ".DS_Store",
+    "requirements.txt",
+    "Thumbs.db",
 ]
 extensions = [
     "myst_parser",
@@ -40,13 +41,12 @@ myst_enable_extensions = [
     "tasklist",
 ]
 myst_fence_as_directive = [
-    "include",
     "mermaid",
 ]
 source_suffix = {
+    ".md": "markdown",
     ".rst": "restructuredtext",
     ".txt": "markdown",
-    ".md": "markdown",
 }
 suppress_warnings = ["epub.unknown_project_files"]
 templates_path = ["_templates"]
